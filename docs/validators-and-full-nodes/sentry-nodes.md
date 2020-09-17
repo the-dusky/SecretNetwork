@@ -31,6 +31,7 @@ Proceed to make the following changes.
 ```bash
 # Comma separated list of nodes to keep persistent connections to
 # Do not add private peers to this list if you don't want them advertised
+# Example Peer: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
 persistent_peers =[list of sentry nodes]
 
 # Set true to enable the peer-exchange reactor
@@ -41,7 +42,7 @@ Sentry Nodes should edit their config.toml:
 
 ```bash
 # Comma separated list of peer IDs to keep private (will not be gossiped to other peers)
-# Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc@3.87.179.235:26656
+# Example ID: 3e16af0cead27979e1fc3dac57d03df3c7a77acc
 private_peer_ids = "node_ids_of_private_peers"
 ```
 
